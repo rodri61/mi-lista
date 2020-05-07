@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 600px;
+    background-color: #193b3b;
+    padding: 50px 0;
+}
+.container{
+    width: 1300px;
+    margin: auto;
+}
+
+.banner{
+    width: 100%;
+    background-image: url(img-fargo/fargo-bg.jpg);
+    background-position: top;
+    display: flex;
+    color: #fff;
+    position: relative;
+}
+a{
+    position: absolute;
+    left: 1200px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.poster{
+    width: 300px;
+    height: 450px;
+}
+.col-right{
+    padding-left: 50px;
+}
+.datos{
+    font-weight: 300;
+}
+.subtitulo{
+    margin: 50px 0 30px 0;
+}
+.director{
+    margin-top: 30px;
+}
+h2{
+    margin-top: 30px;
+}
+.imagenes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.imagenes .imagen img{
+    width: 200px;
+    height: 320px;
+}
+.premios{
+    padding-left: 10px;
+}
+.premios button{
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+.premios a{
+    color: #000;
+    display: block;
+    margin: 30px 0 30px 0;
+}.premios .leer-mas{
+    display: none;
+}

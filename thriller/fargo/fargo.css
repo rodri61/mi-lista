@@ -5,77 +5,181 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: #ededed;
 }
 header{
     width: 100%;
-    height: 600px;
-    background-color: #193b3b;
-    padding: 50px 0;
+    height: 100px;
+    background-color: #545759;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 20px;
+}
+.logo{
+    top: 20px;
+    left: 20px;
+    font-size: 4em;
+    color: #34e7e4;
+    font-weight: 800;
+}
+.logo span{
+    color: #fff;
+}
+.volver a{
+    color: #34e7e4;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+.volver a:hover{
+    color: #fff;
 }
 .container{
-    width: 1300px;
+    width: 1024px;
     margin: auto;
 }
-
-.banner{
+#banner{
     width: 100%;
-    background-image: url(img-fargo/fargo-bg.jpg);
+    height: 400px;
+    background-image: url(img-fargo/fargo-fondo.jpg);
     background-position: top;
-    display: flex;
-    color: #fff;
+    background-size: cover;
+    margin-top: 30px;
     position: relative;
 }
-a{
-    position: absolute;
-    left: 1200px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
+
+article{
+    padding: 30px 0;
+}
+article h1{
+    font-size: 2.5rem;
+}
+article h3{
+    font-size: 1.375rem;
+    font-style: italic;
+    font-weight: 400;
+}
+article p{
+    margin-top: 10px;
+    color: #182C61;
+}
+article span{
+    width: 7px;
+    height: 7px;
+    background-color: #182C61;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 3px;
 
 }
-.poster{
-    width: 300px;
-    height: 450px;
-}
-.col-right{
-    padding-left: 50px;
-}
-.datos{
-    font-weight: 300;
-}
-.subtitulo{
-    margin: 50px 0 30px 0;
-}
-.director{
-    margin-top: 30px;
-}
-h2{
-    margin-top: 30px;
-}
-.imagenes{
+.flex-content{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    color: #545759;
+    padding: 20px 0;
 }
-.imagenes .imagen img{
+.flex-content h3{
+    color: #9d9d9c;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+.flex-content a{
+    color: #484a4c;
+}
+.flex-content .col-left{
+    width: 25%;
+}
+.flex-content .col-left .banner-poster img{
     width: 200px;
-    height: 320px;
+    
 }
-.premios{
-    padding-left: 10px;
+.flex-content .col-left hr{
+    font-size: 1px ;
+    color: #c6c6c6;
 }
-.premios button{
-    background-color: cornflowerblue;
-    width: 200px;
-    height: 50px;
-    color: #fff;
-    font-size: 20px;
+.flex-content .col-left h2{
+    font-weight: 600;
+    margin-bottom: 20px;
 }
-.premios a{
-    color: #000;
-    display: block;
-    margin: 30px 0 30px 0;
-}.premios .leer-mas{
+.flex-content .col-right span{
+    color: #182C61;
+}
+.flex-content .col-center{
+    width: 50%;
+    margin: 0 20px;
+    border-top: 1px solid #c6c6c6;
+}
+.flex-content .col-center hr{
+    font-size: 1px ;
+    color: #c6c6c6;
+}
+
+
+.flex-content .col-right{
+    width: 25%;
+    border-top: 1px solid #c6c6c6;
+}
+
+.flex-content .col-right .premios #btn{
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: #9AECDB;
+    padding: 20px;
+}
+.flex-content .col-right .premios img{
+    height: 20px;;
+}
+
+
+.flex-content .col-right a{
+    display: inline-block;
+    margin: 10px 0 30px 0;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c6c6;
+}
+.modal{
+    width: 420px;
+    height: 520px;
+    background-color: #d1d8e0;
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    z-index: 1;
     display: none;
+}
+.modal .header-modal
+{
+    background-color: #45aaf2;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.modal .header-modal h2{
+    color: #fff;
+
+}
+.modal .header-modal i{
+    font-size: 30px;
+    left: 360px;
+    top: 15px;
+    cursor: pointer;
+
+}
+.modal .section-modal{
+    background-color: #dfe4ea;
+    padding: 10px 20px;
 }
